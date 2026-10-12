@@ -1,11 +1,35 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Advancekids IQRA PINTAR
 
-  <h1>Built with AI Studio</h2>
+A modern, AI-powered IQRA and Juz Amma learning application designed for children.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 Deployment to Netlify
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Upload to GitHub**: Create a new repository on GitHub and push all files.
+2. **Connect to Netlify**:
+   - Go to [Netlify](https://www.netlify.com/) and click "Add new site" > "Import from existing project".
+   - Select your GitHub repository.
+3. **Set Environment Variables**:
+   - In Netlify, go to **Site settings** > **Environment variables**.
+   - Add a variable named `API_KEY`.
+   - Paste your Google Gemini API Key as the value.
+4. **Deploy**: Trigger a manual deploy or push to `main`.
 
-</div>
+## 📱 Using with FlutterFlow (APK)
+
+1. **Host the App**: Use the Netlify URL generated above (e.g., `https://your-site.netlify.app`).
+2. **FlutterFlow Setup**:
+   - Add a `WebView` widget to your FlutterFlow project.
+   - Set the `Initial URL` to your Netlify URL.
+   - Enable `JavaScript Execution`.
+   - Enable `Allow Camera/Microphone` if using AI voice features.
+3. **Build APK**: Use FlutterFlow's build tool to generate the `.apk` file.
+
+## 🔐 Admin Access
+To access the syllabus management or unlock all levels:
+1. Click **"Akses Pentadbir"** on the login screen.
+2. On first use, create your own password.
+3. Use that password for future logins.
+
+---
+© 2024 Advancekids Media

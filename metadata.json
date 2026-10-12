@@ -1,0 +1,8 @@
+{
+  "name": "Advancekids IQRA PINTAR",
+  "description": "An educational application for learning IQRA and Juz 30 with a sleek, modern Islamic aesthetic.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

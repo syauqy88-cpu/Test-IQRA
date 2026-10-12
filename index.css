@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Scheherazade New", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-[#1B1C57] font-sans overflow-x-hidden;
+  }
+  
+  .arabic-text {
+    @apply font-arabic leading-relaxed;
+    direction: rtl;
+  }
+  
+  .quranic-typography {
+    @apply font-arabic leading-normal text-right;
+    word-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    font-kerning: normal;
+    letter-spacing: 0;
+    font-feature-settings: "calt" 1, "ss01" 1, "ss05" 1, "ss09" 1, "dlig" 1 !important;
+  }
+}
+
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-1;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+}
