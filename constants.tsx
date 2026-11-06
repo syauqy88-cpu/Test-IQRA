@@ -90,6 +90,12 @@ export const IQRA_LEVELS: IqraLevel[] = [
 
 export const BISMILLAH = 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ';
 
+// Rakaman suara sendiri untuk Iqra 1. Kunci = huruf berbaris (sama seperti IQRA_1_LETTERS),
+// nilai = nama fail dalam public/audio/. Huruf yang belum ada di sini akan guna TTS Gemini seperti biasa.
+export const IQRA_1_AUDIO: Record<string, string> = {
+  '\u0627\u064E': 'iqra1_01_alif.m4a', // اَ  Alif
+};
+
 export const IQRA_1_LETTERS = [
   'اَ', 'بَ', 'تَ', 'ثَ', 'جَ', 'حَ', 'خَ', 'دَ', 'ذَ', 'رَ', 'زَ', 'سَ', 'شَ', 'صَ', 'ضَ', 'طَ', 'ظَ', 'عَ', 'غَ', 'فَ', 'قَ', 'كَ', 'لَ', 'مَ', 'نَ', 'وَ', 'هَ', 'ءَ', 'يَ'
 ];

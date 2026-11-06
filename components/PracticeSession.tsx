@@ -11,7 +11,7 @@ import {
   BookOpen,
   Star
 } from 'lucide-react';
-import { IQRA_1_LETTERS, IQRA_2_DATA, IQRA_3_DATA, IQRA_4_DATA, IQRA_5_DATA, IQRA_6_DATA, IQRA_7_DATA, IQRA_8_DATA, JUZ_30_DATA, BISMILLAH, Surah } from '../constants.tsx';
+import { IQRA_1_LETTERS, IQRA_1_AUDIO, IQRA_2_DATA, IQRA_3_DATA, IQRA_4_DATA, IQRA_5_DATA, IQRA_6_DATA, IQRA_7_DATA, IQRA_8_DATA, JUZ_30_DATA, BISMILLAH, Surah } from '../constants.tsx';
 import { IqraLevel } from '../types.ts';
 import { GoogleGenAI, Modality } from "@google/genai";
 import Copyright from './Copyright.tsx';
@@ -82,6 +82,7 @@ const PracticeSession: React.FC<PracticeSessionProps> = ({ level, onBack, onFini
   const [selectedSurahIndex, setSelectedSurahIndex] = useState<number | null>(null);
 
   const audioCtxRef = useRef<AudioContext | null>(null);
+  const recordedAudioRef = useRef<HTMLAudioElement | null>(null);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
   const minSwipeDistance = 50;
@@ -181,9 +182,23 @@ const PracticeSession: React.FC<PracticeSessionProps> = ({ level, onBack, onFini
     } catch (e) { console.error(e); } finally { setIsLoadingAudio(false); }
   };
 
+  // Main rakaman suara sendiri (Iqra 1) kalau ada untuk huruf ini. Pulang true jika ada rakaman.
+  const playRecorded = (letter: string): boolean => {
+    if (level.id !== 1) return false;
+    const file = IQRA_1_AUDIO[letter];
+    if (!file) return false;
+    try {
+      recordedAudioRef.current?.pause();
+      const audio = new Audio(new URL(`audio/${file}`, document.baseURI).href);
+      recordedAudioRef.current = audio;
+      audio.play().catch((e) => console.error('Recorded audio error:', e));
+    } catch (e) { console.error(e); }
+    return true;
+  };
+
   const handleBoxClick = (letter: string, id: number | string) => {
     setIsAnimating(id);
-    playTTS(letter);
+    if (!playRecorded(letter)) playTTS(letter);
     setTimeout(() => setIsAnimating(null), 400);
   };
 
