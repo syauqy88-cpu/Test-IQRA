@@ -101,6 +101,7 @@ export const IQRA_1_AUDIO: Record<string, string> = {
   '\u062F\u064E': 'iqra1_08_dal.m4a', // 08
   '\u0630\u064E': 'iqra1_09_dzal.m4a', // 09
   '\u0631\u064E': 'iqra1_10_ra.m4a', // 10
+  '\u0632\u064E': 'iqra1_11_zai.m4a', // 11
   '\u0633\u064E': 'iqra1_12_sin.m4a', // 12
   '\u0634\u064E': 'iqra1_13_syin.m4a', // 13
   '\u0635\u064E': 'iqra1_14_shad.m4a', // 14
