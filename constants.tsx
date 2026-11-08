@@ -98,6 +98,8 @@ export const IQRA_1_AUDIO: Record<string, string> = {
   '\u062A\u064E': 'iqra1_03_ta.m4a', // 03
   '\u062B\u064E': 'iqra1_04_tsa.m4a', // 04
   '\u062C\u064E': 'iqra1_05_jim.m4a', // 05
+  '\u062D\u064E': 'iqra1_06_ha.m4a', // 06
+  '\u062E\u064E': 'iqra1_07_kho.m4a', // 07
   '\u062F\u064E': 'iqra1_08_dal.m4a', // 08
   '\u0630\u064E': 'iqra1_09_dzal.m4a', // 09
   '\u0631\u064E': 'iqra1_10_ra.m4a', // 10
@@ -111,11 +113,13 @@ export const IQRA_1_AUDIO: Record<string, string> = {
   '\u0639\u064E': 'iqra1_18_ain.m4a', // 18
   '\u063A\u064E': 'iqra1_19_ghain.m4a', // 19
   '\u0641\u064E': 'iqra1_20_fa.m4a', // 20
+  '\u0642\u064E': 'iqra1_21_qaf.m4a', // 21
   '\u0643\u064E': 'iqra1_22_kaf.m4a', // 22
   '\u0644\u064E': 'iqra1_23_lam.m4a', // 23
   '\u0645\u064E': 'iqra1_24_mim.m4a', // 24
   '\u0646\u064E': 'iqra1_25_nun.m4a', // 25
   '\u0648\u064E': 'iqra1_26_wau.m4a', // 26
+  '\u0647\u064E': 'iqra1_27_ha2.m4a', // 27
   '\u0621\u064E': 'iqra1_28_hamzah.m4a', // 28
   '\u064A\u064E': 'iqra1_29_ya.m4a', // 29
 };
