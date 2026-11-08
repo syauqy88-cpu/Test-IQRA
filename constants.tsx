@@ -94,6 +94,9 @@ export const BISMILLAH = 'بِسْمِ اللَّهِ الرَّحْمَنِ ا�
 // nilai = nama fail dalam public/audio/. Huruf yang belum ada di sini akan guna TTS Gemini seperti biasa.
 export const IQRA_1_AUDIO: Record<string, string> = {
   '\u0627\u064E': 'iqra1_01_alif.m4a', // اَ  Alif
+  '\u0628\u064E': 'iqra1_02_ba.m4a', // بَ  Ba
+  '\u062A\u064E': 'iqra1_03_ta.m4a', // تَ  Ta
+  '\u062B\u064E': 'iqra1_04_tsa.m4a', // ثَ  Tsa
 };
 
 export const IQRA_1_LETTERS = [
