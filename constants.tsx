@@ -93,25 +93,30 @@ export const BISMILLAH = 'بِسْمِ اللَّهِ الرَّحْمَنِ ا�
 // Rakaman suara sendiri untuk Iqra 1. Kunci = huruf berbaris (sama seperti IQRA_1_LETTERS),
 // nilai = nama fail dalam public/audio/. Huruf yang belum ada di sini akan guna TTS Gemini seperti biasa.
 export const IQRA_1_AUDIO: Record<string, string> = {
-  '\u0627\u064E': 'iqra1_01_alif.m4a', // اَ  01
-  '\u0628\u064E': 'iqra1_02_ba.m4a', // بَ  02
-  '\u062A\u064E': 'iqra1_03_ta.m4a', // تَ  03
-  '\u062B\u064E': 'iqra1_04_tsa.m4a', // ثَ  04
-  '\u062C\u064E': 'iqra1_05_jim.m4a', // جَ  05
-  '\u0630\u064E': 'iqra1_09_dzal.m4a', // ذَ  09
-  '\u0631\u064E': 'iqra1_10_ra.m4a', // رَ  10
-  '\u0633\u064E': 'iqra1_12_sin.m4a', // سَ  12
-  '\u0634\u064E': 'iqra1_13_syin.m4a', // شَ  13
-  '\u0635\u064E': 'iqra1_14_shad.m4a', // صَ  14
-  '\u0637\u064E': 'iqra1_16_tho.m4a', // طَ  16
-  '\u0638\u064E': 'iqra1_17_zho.m4a', // ظَ  17
-  '\u0641\u064E': 'iqra1_20_fa.m4a', // فَ  20
-  '\u0643\u064E': 'iqra1_22_kaf.m4a', // كَ  22
-  '\u0644\u064E': 'iqra1_23_lam.m4a', // لَ  23
-  '\u0645\u064E': 'iqra1_24_mim.m4a', // مَ  24
-  '\u0646\u064E': 'iqra1_25_nun.m4a', // نَ  25
-  '\u0648\u064E': 'iqra1_26_wau.m4a', // وَ  26
-  '\u064A\u064E': 'iqra1_29_ya.m4a', // يَ  29
+  '\u0627\u064E': 'iqra1_01_alif.m4a', // 01
+  '\u0628\u064E': 'iqra1_02_ba.m4a', // 02
+  '\u062A\u064E': 'iqra1_03_ta.m4a', // 03
+  '\u062B\u064E': 'iqra1_04_tsa.m4a', // 04
+  '\u062C\u064E': 'iqra1_05_jim.m4a', // 05
+  '\u062F\u064E': 'iqra1_08_dal.m4a', // 08
+  '\u0630\u064E': 'iqra1_09_dzal.m4a', // 09
+  '\u0631\u064E': 'iqra1_10_ra.m4a', // 10
+  '\u0633\u064E': 'iqra1_12_sin.m4a', // 12
+  '\u0634\u064E': 'iqra1_13_syin.m4a', // 13
+  '\u0635\u064E': 'iqra1_14_shad.m4a', // 14
+  '\u0636\u064E': 'iqra1_15_dhad.m4a', // 15
+  '\u0637\u064E': 'iqra1_16_tho.m4a', // 16
+  '\u0638\u064E': 'iqra1_17_zho.m4a', // 17
+  '\u0639\u064E': 'iqra1_18_ain.m4a', // 18
+  '\u063A\u064E': 'iqra1_19_ghain.m4a', // 19
+  '\u0641\u064E': 'iqra1_20_fa.m4a', // 20
+  '\u0643\u064E': 'iqra1_22_kaf.m4a', // 22
+  '\u0644\u064E': 'iqra1_23_lam.m4a', // 23
+  '\u0645\u064E': 'iqra1_24_mim.m4a', // 24
+  '\u0646\u064E': 'iqra1_25_nun.m4a', // 25
+  '\u0648\u064E': 'iqra1_26_wau.m4a', // 26
+  '\u0621\u064E': 'iqra1_28_hamzah.m4a', // 28
+  '\u064A\u064E': 'iqra1_29_ya.m4a', // 29
 };
 
 export const IQRA_1_LETTERS = [
