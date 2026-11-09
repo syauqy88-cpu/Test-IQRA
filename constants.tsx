@@ -139,6 +139,18 @@ export const IQRA_2_DATA = [
   ['يَ', 'يِ', 'يُ']
 ];
 
+// Rakaman Iqra 2 untuk baris bawah (kasrah) dan hadapan (dhammah). Baris atas (fathah) guna rakaman Iqra 1.
+export const IQRA_2_AUDIO: Record<string, string> = {
+  '\u0627\u0650': 'iqra2_01_alif_kasrah.m4a', // kasrah
+  '\u0627\u064F': 'iqra2_01_alif_dhammah.m4a', // dhammah
+  '\u0628\u0650': 'iqra2_02_ba_kasrah.m4a', // kasrah
+  '\u0628\u064F': 'iqra2_02_ba_dhammah.m4a', // dhammah
+  '\u062A\u0650': 'iqra2_03_ta_kasrah.m4a', // kasrah
+  '\u062A\u064F': 'iqra2_03_ta_dhammah.m4a', // dhammah
+  '\u062B\u0650': 'iqra2_04_tsa_kasrah.m4a', // kasrah
+  '\u062B\u064F': 'iqra2_04_tsa_dhammah.m4a', // dhammah
+};
+
 export const IQRA_3_DATA = [
   ['أً', 'اٍ', 'أٌ'], ['بً', 'بٍ', 'بٌ'], ['تً', 'تٍ', 'تٌ'], ['ثً', 'ثٍ', 'ثٌ'],
   ['جً', 'جٍ', 'جٌ'], ['حً', 'حٍ', 'حٌ'], ['خً', 'خٍ', 'خٌ'], ['دً', 'دٍ', 'دٌ'],

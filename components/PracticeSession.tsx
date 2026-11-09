@@ -11,7 +11,7 @@ import {
   BookOpen,
   Star
 } from 'lucide-react';
-import { IQRA_1_LETTERS, IQRA_1_AUDIO, IQRA_2_DATA, IQRA_3_DATA, IQRA_4_DATA, IQRA_5_DATA, IQRA_6_DATA, IQRA_7_DATA, IQRA_8_DATA, JUZ_30_DATA, BISMILLAH, Surah } from '../constants.tsx';
+import { IQRA_1_LETTERS, IQRA_1_AUDIO, IQRA_2_AUDIO, IQRA_2_DATA, IQRA_3_DATA, IQRA_4_DATA, IQRA_5_DATA, IQRA_6_DATA, IQRA_7_DATA, IQRA_8_DATA, JUZ_30_DATA, BISMILLAH, Surah } from '../constants.tsx';
 import { IqraLevel } from '../types.ts';
 import { GoogleGenAI, Modality } from "@google/genai";
 import Copyright from './Copyright.tsx';
@@ -182,10 +182,10 @@ const PracticeSession: React.FC<PracticeSessionProps> = ({ level, onBack, onFini
     } catch (e) { console.error(e); } finally { setIsLoadingAudio(false); }
   };
 
-  // Main rakaman suara sendiri (Iqra 1) kalau ada untuk huruf ini. Pulang true jika ada rakaman.
+  // Main rakaman suara sendiri (Iqra 1 dan 2) kalau ada untuk huruf ini. Pulang true jika ada rakaman.
   const playRecorded = (letter: string): boolean => {
-    if (level.id !== 1) return false;
-    const file = IQRA_1_AUDIO[letter];
+    if (level.id !== 1 && level.id !== 2) return false;
+    const file = level.id === 1 ? IQRA_1_AUDIO[letter] : (IQRA_2_AUDIO[letter] ?? IQRA_1_AUDIO[letter]);
     if (!file) return false;
     try {
       recordedAudioRef.current?.pause();
